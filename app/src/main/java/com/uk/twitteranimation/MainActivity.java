@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 		
 		fab = findViewById(R.id.floatingActionButton);
 		
-		findViewById(R.id.rootLayout)
+		findViewById(R.id.button)
 			.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
