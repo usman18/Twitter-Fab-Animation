@@ -10,7 +10,9 @@ public class MainActivity extends AppCompatActivity {
 	
 	private FloatingActionButton fab;
 	
-	private int drawableId = R.drawable.feather;
+	private int drawableId = R.drawable.ic_mail_outline;
+	private int rotation = 180;                    //Default
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,24 +29,25 @@ public class MainActivity extends AppCompatActivity {
 					
 					fab.setImageResource(drawableId);
 					
-					
 					fab.animate()
-						.rotationBy(180)
+						.rotationBy(rotation)
 						.setDuration(180)
 						.scaleX(1.2f)           //Scaling to 120%
 						.scaleY(1.2f)
 						.withEndAction(new Runnable() {
 							@Override
 							public void run() {
-								
+								//End Animation
 								fab.animate()
-									.rotationBy(180)
+									.rotationBy(rotation)
 									.setDuration(180)
 									.scaleX(1)              //Scaling back to what it was
 									.scaleY(1).start();
 								
 								
 								drawableId = (drawableId == R.drawable.feather) ? R.drawable.ic_mail_outline : R.drawable.feather;
+								rotation = -rotation;
+								
 							}
 						})
 						.start();
