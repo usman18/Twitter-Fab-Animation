@@ -1,7 +1,10 @@
 # Twitter-Fab-Animation
   Twitter Floating Action Button (FAB) animation in Android ❤️❤️❤️
-  
- # Animation
+
+# Explanation 
+ [Medium Article](https://medium.com/@usman18/twitter-fab-animation-in-android-544f2de80e86)
+ 
+## Animation
  
 <img height=550 width=400 hspace=200 src="https://github.com/usman18/Twitter-Fab-Animation/blob/master/Screenshots/Twitter_full.gif"/>
 
